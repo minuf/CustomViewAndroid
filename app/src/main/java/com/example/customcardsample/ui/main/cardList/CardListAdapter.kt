@@ -1,10 +1,10 @@
-package com.example.customcardsample.ui.main
+package com.example.customcardsample.ui.main.cardList
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import com.example.customcardsample.databinding.ViewCustomCardBinding
-import com.example.customcardsample.model.Card
+import com.example.customcardsample.model.card.Card
 
 class CardListAdapter : ListAdapter<Card, CardViewHolder>(CardDiffUtilCallback) {
 

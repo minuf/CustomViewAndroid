@@ -1,7 +1,7 @@
-package com.example.customcardsample.ui.main
+package com.example.customcardsample.ui.main.cardList
 
 import androidx.recyclerview.widget.DiffUtil
-import com.example.customcardsample.model.Card
+import com.example.customcardsample.model.card.Card
 
 object CardDiffUtilCallback : DiffUtil.ItemCallback<Card>() {
     override fun areItemsTheSame(oldItem: Card, newItem: Card): Boolean =

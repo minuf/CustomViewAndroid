@@ -1,4 +1,4 @@
-package com.example.customcardsample.model
+package com.example.customcardsample.model.card
 
 data class CardNumber(val value: Long) {
     private val size = 16

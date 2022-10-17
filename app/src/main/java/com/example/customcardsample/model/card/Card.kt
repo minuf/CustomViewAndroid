@@ -1,4 +1,4 @@
-package com.example.customcardsample.model
+package com.example.customcardsample.model.card
 
 data class Card(
     val name: String = "Credit Visa",

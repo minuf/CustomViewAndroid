@@ -5,7 +5,7 @@
     <data>
         <variable
             name="card"
-            type="com.example.customcardsample.model.Card" />
+            type="com.example.customcardsample.model.card.Card" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

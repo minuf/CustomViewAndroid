@@ -7,8 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.customcardsample.R
 import com.example.customcardsample.databinding.FragmentMainBinding
+import com.example.customcardsample.ui.main.cardList.CardListAdapter
 
 class MainFragment : Fragment() {
 
@@ -16,8 +16,8 @@ class MainFragment : Fragment() {
         fun newInstance() = MainFragment()
     }
 
-    private lateinit var _binding: FragmentMainBinding
-    private val binding get() = _binding
+    private var _binding: FragmentMainBinding? = null
+    private val binding get() = _binding!!
 
     private lateinit var viewModel: MainViewModel
 
@@ -39,4 +39,8 @@ class MainFragment : Fragment() {
         binding.rvCards.adapter = CardListAdapter()
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
+    }
 }
