@@ -8,10 +8,8 @@ import com.example.customcardsample.model.card.Card
 
 class CardListAdapter : ListAdapter<Card, CardViewHolder>(CardDiffUtilCallback) {
 
-    private lateinit var binding: ViewCustomCardBinding
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardViewHolder {
-        binding = ViewCustomCardBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = ViewCustomCardBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return CardViewHolder(binding)
     }
 

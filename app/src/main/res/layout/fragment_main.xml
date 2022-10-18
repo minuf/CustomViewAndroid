@@ -23,7 +23,7 @@
             android:scrollbars="vertical"
             app:layoutManager="LinearLayoutManager"
             app:data="@{viewModel.cards}"
-            tools:listitem="@layout/view_custom_card"
+            tools:listitem="@layout/item_card"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
