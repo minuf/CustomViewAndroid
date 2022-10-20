@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="card"
             type="com.example.customcardsample.model.card.Card" />
     </data>
 
-    <com.example.customcardsample.ui.main.CustomCard
-        android:layout_width="wrap_content"
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:card="@{card}"/>
+        card_view:cardCornerRadius="10">
+
+        <com.example.customcardsample.ui.main.CustomCard
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:card="@{card}" />
+
+    </androidx.cardview.widget.CardView>
+
 </layout>
