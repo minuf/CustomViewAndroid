@@ -9,5 +9,8 @@ data class Card(
     val limit: Double = 20000.00,
     var disposed: Double = 1000.00,
     var available: Double = (limit - disposed),
-    var status: CardStatus = CardStatus.ON
+    var status: CardStatus = CardStatus.ON,
+    var optionsListener: () -> Unit,
+    var activationToggleListener: (Boolean) -> Unit,
+    var controlListener: () -> Unit
 )

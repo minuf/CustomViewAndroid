@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomCard">
+        <attr name="customCard_name" format="string" />
+        <attr name="customCard_type" format="string" />
+        <attr name="customCard_hiddenNumber" format="string" />
+        <attr name="customCard_titular" format="string" />
+        <attr name="customCard_limit" format="string" />
+        <attr name="customCard_disposed" format="string" />
+        <attr name="customCard_available" format="string" />
+
+        <attr name="customCard_optionsListener" format="reference" />
+        <attr name="customCard_activationListener" format="reference" />
+        <attr name="customCard_controlListener" format="reference" />
+    </declare-styleable>
+
+</resources>
