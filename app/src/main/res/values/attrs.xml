@@ -7,6 +7,8 @@
         <attr name="customCard_hiddenNumber" format="string" />
         <attr name="customCard_titular" format="string" />
         <attr name="customCard_limit" format="string" />
+        <attr name="customCard_maxBalance" format="integer" />
+        <attr name="customCard_currentBalance" format="integer" />
         <attr name="customCard_disposed" format="string" />
         <attr name="customCard_available" format="string" />
 
