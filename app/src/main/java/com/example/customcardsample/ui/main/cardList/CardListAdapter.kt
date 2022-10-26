@@ -6,8 +6,9 @@ import androidx.recyclerview.widget.ListAdapter
 import com.example.customcardsample.databinding.ItemCardBinding
 import com.example.customcardsample.databinding.ViewCustomCardBinding
 import com.example.customcardsample.model.card.Card
+import com.example.customcardsample.ui.CustomCardData
 
-class CardListAdapter : ListAdapter<Card, CardViewHolder>(CardDiffUtilCallback) {
+class CardListAdapter : ListAdapter<CustomCardData, CardViewHolder>(CardDiffUtilCallback) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardViewHolder {
         val binding = ItemCardBinding.inflate(LayoutInflater.from(parent.context), parent, false)

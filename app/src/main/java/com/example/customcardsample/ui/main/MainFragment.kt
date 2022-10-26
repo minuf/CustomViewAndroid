@@ -38,10 +38,11 @@ class MainFragment : Fragment() {
 
         binding.rvCards.layoutManager = LinearLayoutManager(requireContext())
         binding.rvCards.adapter = CardListAdapter()
-        //binding.rvCards.addItemDecoration()
+
+        viewModel.fetchCards()
 
         lifecycleScope.launchWhenCreated {
-            viewModel.currentState.collect {
+            viewModel.currentListenerState.collect {
                 it.process()
             }
         }
@@ -52,19 +53,25 @@ class MainFragment : Fragment() {
         _binding = null
     }
 
-    private fun MainState.process() = when (this) {
-        MainState.InitialState -> Unit
-        MainState.OptionsClick -> Toast.makeText(
-            this@MainFragment.requireContext(),
-            "OPTIONS CLICKED",
-            Toast.LENGTH_LONG
-        ).show()
-        is MainState.ControlClick -> Toast.makeText(
-            this@MainFragment.requireContext(),
-            "CONTROL CLICKED",
-            Toast.LENGTH_LONG
-        ).show()
-        is MainState.ActivationClick -> Toast.makeText(
+    private fun ListenerState.process() = when (this) {
+        ListenerState.Initial -> Unit
+        ListenerState.Options -> {
+            Toast.makeText(
+                this@MainFragment.requireContext(),
+                "OPTIONS CLICKED",
+                Toast.LENGTH_LONG
+            ).show()
+            viewModel.resetListenerState()
+        }
+        is ListenerState.Control -> {
+            Toast.makeText(
+                this@MainFragment.requireContext(),
+                message,
+                Toast.LENGTH_LONG
+            ).show()
+            viewModel.resetListenerState()
+        }
+        is ListenerState.Activation -> Toast.makeText(
             this@MainFragment.requireContext(),
             message, Toast.LENGTH_LONG
         ).show()

@@ -9,7 +9,7 @@ import com.example.customcardsample.model.card.Card
 import com.example.customcardsample.ui.main.cardList.CardListAdapter
 
 @BindingAdapter("data")
-fun setRecyclerViewProperties(recyclerView: RecyclerView, data: List<Card>) {
+fun setRecyclerViewProperties(recyclerView: RecyclerView, data: List<CustomCardData>) {
     val adapter = recyclerView.adapter
     if (adapter is CardListAdapter) {
         adapter.submitList(data)
