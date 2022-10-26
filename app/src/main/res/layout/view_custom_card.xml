@@ -75,7 +75,7 @@
             android:layout_marginTop="30dp"
             android:layout_width="300dp"
             android:layout_height="180dp"
-            app:srcCompat="@color/teal_700"
+            app:srcCompat="@drawable/bg_card_image"
             app:layout_constraintTop_toBottomOf="@+id/tv_titular"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
@@ -124,7 +124,8 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
             android:textColor="#002B45"
             android:textSize="12sp"
-            app:drawableLeftCompat="@android:drawable/radiobutton_off_background" />
+            android:drawablePadding="4dp"
+            app:drawableLeftCompat="@drawable/ic_left_circle_orange" />
 
         <TextView
             android:id="@+id/tv_available_title"
@@ -137,7 +138,8 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
             android:textColor="#002B45"
             android:textSize="12sp"
-            app:drawableLeftCompat="@android:drawable/radiobutton_off_background" />
+            android:drawablePadding="4dp"
+            app:drawableLeftCompat="@drawable/ic_left_circle_grey" />
 
         <TextView
             android:id="@+id/tv_disposed_value"
@@ -167,7 +169,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#37555555"
+        android:background="#f0f4f4"
         android:paddingHorizontal="10dp"
         android:layout_marginTop="20dp"
         app:layout_constraintTop_toBottomOf="@+id/card_content">
