@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                  
+                                                        
+
+    
+
+           
+
+    <merge
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout"  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="18dp"
+            android:paddingTop="16dp"
+            app:layout_constraintTop_toTopOf="parent" android:tag="layout/view_custom_card_0">
+
+            <TextView
+                android:id="@+id/tv_card_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:textColor="@color/custom_blue_dark"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/ib_card_options"
+                android:layout_width="18dp"
+                android:layout_height="22dp"
+                android:background="@mipmap/dots"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_card_name"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_card_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tv_card_name"
+                app:layout_constraintLeft_toLeftOf="@+id/tv_card_name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:textColor="@color/custom_blue_dark"
+                android:textSize="12sp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp" />
+
+            <TextView
+                android:id="@+id/tv_hidden_card_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tv_card_name"
+                app:layout_constraintLeft_toRightOf="@+id/tv_card_type"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:textColor="@color/custom_blue_dark"
+                android:textSize="12sp"
+                android:padding="6dp" />
+
+            <TextView
+                android:id="@+id/tv_titular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_textview_rectangle"
+                android:text="@string/titular"
+                android:padding="6dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_card_name"
+                app:layout_constraintLeft_toRightOf="@+id/tv_hidden_card_number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:textColor="@color/custom_blue_dark"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_card"
+                android:layout_marginTop="30dp"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                app:srcCompat="@drawable/bg_card_image"
+                app:layout_constraintTop_toBottomOf="@+id/tv_titular"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_limit_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_card"
+                android:text="@string/limit"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:textColor="@color/custom_blue_dark"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_limit_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_card"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:textColor="@color/custom_blue_dark"
+                android:textSize="14sp" />
+
+            <ProgressBar
+                android:id="@+id/pb_balance"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tv_limit_title"
+                android:progress="70"
+                android:progressTint="@color/custom_orange" />
+
+            <TextView
+                android:id="@+id/tv_disposed_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pb_balance"
+                android:text="@string/disposed"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:textColor="#002B45"
+                android:textSize="12sp"
+                android:drawablePadding="4dp"
+                app:drawableLeftCompat="@drawable/ic_left_circle_orange" />
+
+            <TextView
+                android:id="@+id/tv_available_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pb_balance"
+                android:text="@string/disposed"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:textColor="#002B45"
+                android:textSize="12sp"
+                android:drawablePadding="4dp"
+                app:drawableLeftCompat="@drawable/ic_left_circle_grey" />
+
+            <TextView
+                android:id="@+id/tv_disposed_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_disposed_title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:textColor="@color/custom_blue_dark"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_available_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_disposed_title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:textColor="@color/custom_blue_dark"
+                android:textSize="14sp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/custom_grey"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/card_content" android:tag="layout/view_custom_card_1">
+
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/tb_on_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp"
+                android:textOn="@string/on"
+                android:textOff="@string/off"
+                android:text="@string/card" />
+
+            <TextView
+                android:id="@+id/tv_card_control_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/ib_card_control"
+                android:text="@string/card_control"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:textColor="@color/custom_blue"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/ib_card_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:background="@mipmap/settings" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </merge>
+         

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CustomCardSample.iml" filepath="$PROJECT_DIR$/.idea/modules/CustomCardSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CustomCardSample.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CustomCardSample.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CustomCardSample.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CustomCardSample.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CustomCardSample.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CustomCardSample.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CustomCardSample.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CustomCardSample.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uiKit/CustomCardSample.uiKit.iml" filepath="$PROJECT_DIR$/.idea/modules/uiKit/CustomCardSample.uiKit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uiKit/CustomCardSample.uiKit.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/uiKit/CustomCardSample.uiKit.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uiKit/CustomCardSample.uiKit.main.iml" filepath="$PROJECT_DIR$/.idea/modules/uiKit/CustomCardSample.uiKit.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uiKit/CustomCardSample.uiKit.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/uiKit/CustomCardSample.uiKit.unitTest.iml" />
+    </modules>
+  </component>
+</project>
