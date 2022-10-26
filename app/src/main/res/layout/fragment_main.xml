@@ -6,7 +6,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.example.customcardsample.ui.main.MainViewModel" />
+            type="com.example.customcardsample.ui.cards.CardsViewModel" />
 
     </data>
 
@@ -14,7 +14,7 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.main.MainFragment">
+        tools:context=".ui.cards.CardsFragment">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_cards"

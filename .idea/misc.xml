@@ -13,6 +13,11 @@
         <entry key="..\:/Users/jcolorad/AndroidStudioProjects/CustomCardSample/app/src/main/res/layout/fragment_main.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/jcolorad/AndroidStudioProjects/CustomCardSample/app/src/main/res/layout/item_card.xml" value="0.22" />
         <entry key="..\:/Users/jcolorad/AndroidStudioProjects/CustomCardSample/app/src/main/res/layout/view_custom_card.xml" value="0.22" />
+        <entry key="..\:/Users/jcolorad/AndroidStudioProjects/CustomCardSample/uiKit/src/main/res/drawable/bg_card_image.xml" value="0.125" />
+        <entry key="..\:/Users/jcolorad/AndroidStudioProjects/CustomCardSample/uiKit/src/main/res/drawable/bg_textview_rectangle.xml" value="0.136" />
+        <entry key="..\:/Users/jcolorad/AndroidStudioProjects/CustomCardSample/uiKit/src/main/res/drawable/ic_left_circle_grey.xml" value="0.125" />
+        <entry key="..\:/Users/jcolorad/AndroidStudioProjects/CustomCardSample/uiKit/src/main/res/drawable/ic_left_circle_orange.xml" value="0.125" />
+        <entry key="..\:/Users/jcolorad/AndroidStudioProjects/CustomCardSample/uiKit/src/main/res/layout/view_custom_card.xml" value="0.18162393162393162" />
       </map>
     </option>
   </component>
